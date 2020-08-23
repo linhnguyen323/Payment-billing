@@ -35,4 +35,9 @@ public class CartItem {
         CartItem item = (CartItem) o;
         return item!= null && item.getProductId()==this.getProductId();
     }
+	
+	@Override
+	public int hashCode() {
+		return 1;
+	}
 }
