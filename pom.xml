@@ -6,7 +6,7 @@
 	<groupId>net.vatri.ecommerce</groupId>
 	<artifactId>ecommerce-starter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>ecommerce-starter</name>
 	<description>Java Spring Boot Ecommerce starter project</description>
@@ -89,7 +89,10 @@
 
 
 
-    <build>
+    <properties>
+		<java.version>1.8</java.version>
+	</properties>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
